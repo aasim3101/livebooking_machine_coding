@@ -17,7 +17,7 @@ public class LiveShow {
 
     public void addSlot(ShowSlot slot) {
         if (slots.containsKey(slot.getStartTime())) {
-            throw new IllegalArgumentException("Overlapping slot not allow");
+            throw new IllegalArgumentException("Overlapping slot not");
         }
 
         slots.put(slot.getStartTime(), slot);
